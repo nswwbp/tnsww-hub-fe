@@ -12,15 +12,15 @@ export default function FooterInstance({
         <span className="w-1/2">
           <LogoInstance type={"footer"} />
         </span>
-        <span className="w-1/2">
+        <span className="w-1/2 px-6">
           <span className="text-white">
             &copy;The Name School World-Wide &trade;
           </span>
         </span>
       </div>
-      <section className="w-full h-max md:row-content-between sm:col-all-start">
+      <section className="w-full h-max md:row-content-between !items-start sm:col-all-start">
         <div className="w-[50%] h-max">
-          <nav className="md:grid-2-cols justify-center items-center w-full h-max gap-x-2">
+          <nav className="md:grid-2-cols justify-start items-start w-full h-max gap-x-2">
             {navLinks?.map((_link: any, _idx: number) => (
               <LinkInstance
                 key={_idx}
@@ -37,7 +37,7 @@ export default function FooterInstance({
           </nav>
         </div>
         <div className="w-[50%] h-max">
-          <nav className="md:grid-2-cols justify-center items-center w-full h-max gap-x-2">
+          <nav className="md:grid-2-cols justify-start items-start w-full h-max gap-x-2">
             {socialLinks?.map((_link: any, _idx: number) => (
               <LinkInstance
                 key={_idx}
