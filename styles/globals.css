@@ -165,13 +165,13 @@ a:hover {
   }
 
   .grid-2-cols {
-    @apply grid grid-cols-2 w-full gap-x-6;
+    @apply w-full gap-x-6 grid grid-cols-2;
   }
   .grid-3-cols {
-    @apply grid grid-cols-3 w-full gap-x-6;
+    @apply w-full gap-x-6 grid grid-cols-3;
   }
   .grid-4-cols {
-    @apply grid grid-cols-4 w-full gap-x-6;
+    @apply w-full gap-x-6 grid grid-cols-4;
   }
 }
 
