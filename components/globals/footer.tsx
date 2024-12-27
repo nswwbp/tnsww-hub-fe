@@ -8,7 +8,7 @@ export default function FooterInstance({
 }: INavLinksInterface) {
   return (
     <footer className="px-[var(--body-global-padding)] bg-[var(--trademark-color-mauve-2)] w-full px-10 py-4 gap-y-6 h-max col-all-start">
-      <div className="w-full row-content-between">
+      <div className="w-full md:row-content-between">
         <span className="w-1/2">
           <LogoInstance type={"footer"} />
         </span>
