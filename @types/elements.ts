@@ -29,20 +29,20 @@ export interface IButtonProps {
   buttonColor: string;
 }
 export interface IActionButtonProps {
-  loading: boolean;
+  loading?: boolean;
   onClick: Function | MouseEvent | KeyboardEvent | TouchEvent | any;
-  customClass: string;
-  disabled: boolean;
-  showIcon: true;
+  customClass?: string;
+  disabled?: boolean;
+  showIcon?: true;
   Icon: ElementType;
-  iconColor: string;
-  iconSize: string | number;
-  iconPosition: string;
-  label: string;
-  customStyle: React.CSSProperties;
-  buttonType: "button" | "submit" | "reset" | undefined;
-  title: string;
-  buttonColor: string;
+  iconColor?: string;
+  iconSize?: string | number;
+  iconPosition?: string;
+  label?: string;
+  customStyle?: React.CSSProperties;
+  buttonType?: "button" | "submit" | "reset" | undefined;
+  title?: string;
+  buttonColor?: string;
 }
 
 export interface IIconProps {
@@ -58,27 +58,27 @@ export interface IllustrationsProps {
 }
 
 export interface IInputProps {
-  showIcon: boolean;
+  showIcon?: boolean;
   Icon: ElementType;
-  iconColor: string;
-  iconSize: number;
-  showLabel: boolean;
-  label: string;
-  required: boolean;
-  inputType: string;
+  iconColor?: string;
+  iconSize?: number;
+  showLabel?: boolean;
+  label?: string;
+  required?: boolean;
+  inputType?: string;
   name: string;
-  placeholder: string;
-  defaultValue: string | number;
-  value: string | number;
+  placeholder?: string;
+  defaultValue?: string | number;
+  value?: string | number;
   onChangeVal: Function;
-  error: string;
-  customError: string;
-  customformInputStyle: React.CSSProperties;
+  error?: string;
+  customError?: string;
+  customformInputStyle?: React.CSSProperties;
   min?: number;
   max?: number;
-  disabled: boolean;
-  autoFocus: boolean;
-  onFocus: FocusEventHandler;
+  disabled?: boolean;
+  autoFocus?: boolean;
+  onFocus?: FocusEventHandler;
 }
 
 export interface IllustrationsProps {
