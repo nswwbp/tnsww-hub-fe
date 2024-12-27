@@ -1,5 +1,9 @@
 import { IIconProps } from "@/@types/elements";
-import { BiMessageSquareError, BiTransferAlt } from "react-icons/bi";
+import {
+  BiMessageSquareError,
+  BiShareAlt,
+  BiTransferAlt,
+} from "react-icons/bi";
 import { BsPersonFillGear, BsPersonGear, BsThreeDots } from "react-icons/bs";
 import {
   FaCalendarAlt,
@@ -31,7 +35,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { GoArrowSwitch } from "react-icons/go";
+import { GoArrowSwitch, GoHeart, GoHeartFill } from "react-icons/go";
+import { GrLike } from "react-icons/gr";
 import {
   IoDocumentAttachOutline,
   IoShieldCheckmarkOutline,
@@ -64,7 +69,7 @@ import {
   TbReload,
   TbSettings,
 } from "react-icons/tb";
-import { TiArrowBack, TiArrowForward } from "react-icons/ti";
+import { TiArrowBack, TiArrowForward, TiTicket } from "react-icons/ti";
 
 export const IconInstance = ({
   Icon,
@@ -133,6 +138,7 @@ export const commonIcons = {
   //commerce icons
   moneybill: MdOutlineRequestQuote,
   checkouticon: MdOutlineShoppingCartCheckout,
+  ticketIcon: TiTicket,
 
   //documents and attachments
   pdfIcon: FaRegFilePdf,
@@ -149,7 +155,6 @@ export const commonIcons = {
   logouticon: MdOutlineLogout,
 
   //social icons:
-
   facebookIcon: FaFacebook,
   instagramIcon: LuInstagram,
   linkedInIcon: FaLinkedin,
@@ -158,4 +163,8 @@ export const commonIcons = {
   whatsAppIcon: FaWhatsapp,
   xIcon: FaXTwitter,
   ytIcon: FaYoutube,
+  likeIcon: GrLike,
+  shareIcon: BiShareAlt,
+  wishlistIcon: GoHeart,
+  wishlistinIconChecked: GoHeartFill,
 };
