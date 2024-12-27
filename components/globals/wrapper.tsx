@@ -51,30 +51,30 @@ export default function PageWrapper({ children }: any) {
 
     {
       label: "X",
-      route: "https://baptism.tnsww.com",
+      route: "#",
 
       target: "_blank",
       icon: commonIcons.xIcon,
     },
     {
       label: "TikTok",
-      route: "https://twc.tnsww.com",
+      route: "#",
 
       target: "_blank",
       icon: commonIcons.tiktokIcon,
     },
     {
       label: "Youtube",
-      route: "https://yout.tnsww.com",
+      route: "#",
 
       target: "_blank",
       icon: commonIcons.ytIcon,
     },
   ];
   return (
-    <div className="w-full h-[100vh] flex flex-col justify-start items-start gap-y-[2rem]">
+    <div className="w-full min-h-[100vh] flex flex-col justify-start items-start gap-y-[1rem]">
       <HeaderInstance navLinks={navLinks} />
-      <div className="w-full min-h-[80vh] px-[var(--body-global-padding)] h-max flex flex-col justify-center items-center bg-white">
+      <div className="w-full min-h-[80vh] px-[var(--body-global-padding)] h-max flex flex-col justify-start items-start bg-white">
         {children}
       </div>
       <FooterInstance navLinks={navLinks} socialLinks={socialLinks} />
