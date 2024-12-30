@@ -3,22 +3,46 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3003",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.13",
+    "axios": "^1.6.8",
+    "framer-motion": "^11.3.24",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "next": "15.1.2",
     "react": "^19.0.0",
+    "react-datepicker": "^7.5.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.2"
+    "react-icons": "^5.0.1",
+    "react-lottie": "^1.2.4",
+    "react-multi-carousel": "^2.8.4",
+    "react-paginate": "^8.2.0",
+    "react-query": "^3.39.3",
+    "react-quill": "^2.0.0",
+    "react-select": "^5.8.2",
+    "react-slick": "^0.30.3",
+    "react-slideshow-image": "^4.3.1",
+    "slick-carousel": "^1.8.1",
+    "sonner": "^1.5.0",
+    "universal-cookie": "^7.2.0",
+    "yet-another-react-lightbox": "^3.17.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "react-widgets": "^5.8.4",
+    "sass": "^1.79.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.7.2"
   }
 }
