@@ -10,7 +10,7 @@ export default function HeaderInstance({ navLinks }: INavLinksInterface) {
       <span className="flex justify-start items-center md:w-[10%] sm:w-[50%]">
         <LogoInstance type={"header"} />
       </span>
-      <nav className="md:flex justify-center items-center w-[80%] h-full gap-x-2 sm:hidden">
+      <nav className="lg:flex flex justify-center items-center w-[80%] h-full gap-x-2 xs:!hidden ">
         {navLinks?.map((_link: any, _idx: number) => (
           <LinkInstance
             customClass={""}

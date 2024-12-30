@@ -18,7 +18,8 @@ export const RequiredMarker = () => {
   return <sup className="text-[var(--danger)]">*</sup>;
 };
 
-const globalInputClass = `w-full flex justify-start items-center gap-x-[0.75rem] py-[0.25rem] px-[0.5rem] rounded-[var(--radius-sm)] bg-[var(--white)] border border-t-gray-200`;
+const formInputWrapper = `w-[100%] h-max col-all-start gap-y-4`;
+const globalInputClass = `w-full flex justify-start items-center gap-x-[0.75rem] py-[0.25rem] px-[0.5rem] rounded-[var(--radius-min)] bg-[var(--white)] border border-t-gray-200`;
 
 //regular input
 export const RegularInput = ({
@@ -45,10 +46,7 @@ export const RegularInput = ({
   onFocus,
 }: IInputProps) => {
   return (
-    <div
-      className={`${formStyles.formInputWrapper}`}
-      style={customformInputStyle}
-    >
+    <div className={formInputWrapper} style={customformInputStyle}>
       {showLabel && (
         <LabelInstance
           htmlFor={name}
@@ -88,7 +86,9 @@ export const RegularInput = ({
           onFocus={onFocus}
         />
       </div>
-      {(error || customError) && <ErrorNotif message={error || customError} />}
+      {(error || customError) && (
+        <ErrorNotif message={error || customError || ""} />
+      )}
     </div>
   );
 };
@@ -112,7 +112,7 @@ export const RegularSelect = ({
   customLabelClass = "",
 }: ISelectProps) => {
   return (
-    <div className="relative" style={{ width: "100%" }}>
+    <div className={formInputWrapper} style={{ width: "100%" }}>
       {label && (
         <LabelInstance
           label={label ?? ""}
@@ -240,10 +240,7 @@ export const DateInput = ({
   readOnly,
 }: IDateInputProps) => {
   return (
-    <div
-      className={`${formStyles.formInputWrapper}`}
-      style={customformInputStyle}
-    >
+    <div className={formInputWrapper} style={customformInputStyle}>
       {showLabel && (
         <LabelInstance
           htmlFor={name}

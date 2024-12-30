@@ -86,12 +86,16 @@ export const ActionButtonInstance = ({
   return (
     <button
       title={title ?? "Click"}
-      className={`row-all-centered px-16 py-3 ${
-        buttonColor == "black"
-          ? "bg-[var(--memphis-black-500)]"
+      className={`row-all-centered px-2 py-2 ${
+        buttonColor == "mauve"
+          ? "bg-[var(--trademark-color-mauve)]"
+          : buttonColor == "mauve-b"
+          ? "bg-[var(--trademark-color-mauve-2)]"
+          : buttonColor == "mauve-c"
+          ? "bg-[var(--trademark-color-mauve-3)]"
           : buttonColor == "white"
           ? "bg-[var(--white)]"
-          : "bg-[var(--memphis-black-300)]"
+          : "bg-[var(--black)]"
       } text-${iconColor ?? "white"} rounded ${customClass} ${
         disabled && "bg-gray-400"
       }`}
